@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F29CEEA1E9F919100C79EC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CEE91E9F919100C79EC2 /* main.m */; };
+		2F29CEED1E9F919100C79EC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CEEC1E9F919100C79EC2 /* AppDelegate.m */; };
+		2F29CEF01E9F919100C79EC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CEEF1E9F919100C79EC2 /* ViewController.m */; };
+		2F29CEF31E9F919100C79EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F29CEF11E9F919100C79EC2 /* Main.storyboard */; };
+		2F29CEF51E9F919100C79EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F29CEF41E9F919100C79EC2 /* Assets.xcassets */; };
+		2F29CEF81E9F919100C79EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F29CEF61E9F919100C79EC2 /* LaunchScreen.storyboard */; };
+		2F29CF031E9F919100C79EC2 /* LySelectImageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CF021E9F919100C79EC2 /* LySelectImageDemoTests.m */; };
+		2F29CF0E1E9F919100C79EC2 /* LySelectImageDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CF0D1E9F919100C79EC2 /* LySelectImageDemoUITests.m */; };
+		2F29CF3B1E9F92DE00C79EC2 /* LySelectImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CF311E9F92DE00C79EC2 /* LySelectImageCollectionCell.m */; };
+		2F29CF3C1E9F92DE00C79EC2 /* LySelectImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CF331E9F92DE00C79EC2 /* LySelectImageView.m */; };
+		2F29CF3D1E9F92DE00C79EC2 /* ZJCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CF361E9F92DE00C79EC2 /* ZJCollectionCell.m */; };
+		2F29CF3E1E9F92DE00C79EC2 /* ZJFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CF381E9F92DE00C79EC2 /* ZJFlowLayout.m */; };
+		2F29CF3F1E9F92DE00C79EC2 /* ZJPhoneBrower.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29CF3A1E9F92DE00C79EC2 /* ZJPhoneBrower.m */; };
+		305BAA51F43E827B08918BA2 /* libPods-LySelectImageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A856C086BF9A49F67A8AB9FD /* libPods-LySelectImageDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F29CEFF1E9F919100C79EC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F29CEDD1E9F919100C79EC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F29CEE41E9F919100C79EC2;
+			remoteInfo = LySelectImageDemo;
+		};
+		2F29CF0A1E9F919100C79EC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F29CEDD1E9F919100C79EC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F29CEE41E9F919100C79EC2;
+			remoteInfo = LySelectImageDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23111A8B844838AC89109546 /* Pods-LySelectImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LySelectImageDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LySelectImageDemo/Pods-LySelectImageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2F29CEE51E9F919100C79EC2 /* LySelectImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LySelectImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F29CEE91E9F919100C79EC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F29CEEB1E9F919100C79EC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F29CEEC1E9F919100C79EC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F29CEEE1E9F919100C79EC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F29CEEF1E9F919100C79EC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F29CEF21E9F919100C79EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F29CEF41E9F919100C79EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F29CEF71E9F919100C79EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F29CEF91E9F919100C79EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F29CEFE1E9F919100C79EC2 /* LySelectImageDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LySelectImageDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F29CF021E9F919100C79EC2 /* LySelectImageDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LySelectImageDemoTests.m; sourceTree = "<group>"; };
+		2F29CF041E9F919100C79EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F29CF091E9F919100C79EC2 /* LySelectImageDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LySelectImageDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F29CF0D1E9F919100C79EC2 /* LySelectImageDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LySelectImageDemoUITests.m; sourceTree = "<group>"; };
+		2F29CF0F1E9F919100C79EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F29CF301E9F92DE00C79EC2 /* LySelectImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LySelectImageCollectionCell.h; sourceTree = "<group>"; };
+		2F29CF311E9F92DE00C79EC2 /* LySelectImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LySelectImageCollectionCell.m; sourceTree = "<group>"; };
+		2F29CF321E9F92DE00C79EC2 /* LySelectImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LySelectImageView.h; sourceTree = "<group>"; };
+		2F29CF331E9F92DE00C79EC2 /* LySelectImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LySelectImageView.m; sourceTree = "<group>"; };
+		2F29CF351E9F92DE00C79EC2 /* ZJCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCollectionCell.h; sourceTree = "<group>"; };
+		2F29CF361E9F92DE00C79EC2 /* ZJCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCollectionCell.m; sourceTree = "<group>"; };
+		2F29CF371E9F92DE00C79EC2 /* ZJFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFlowLayout.h; sourceTree = "<group>"; };
+		2F29CF381E9F92DE00C79EC2 /* ZJFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFlowLayout.m; sourceTree = "<group>"; };
+		2F29CF391E9F92DE00C79EC2 /* ZJPhoneBrower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPhoneBrower.h; sourceTree = "<group>"; };
+		2F29CF3A1E9F92DE00C79EC2 /* ZJPhoneBrower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPhoneBrower.m; sourceTree = "<group>"; };
+		A856C086BF9A49F67A8AB9FD /* libPods-LySelectImageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LySelectImageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F091F3EDB2F56591F50599FC /* Pods-LySelectImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LySelectImageDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LySelectImageDemo/Pods-LySelectImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F29CEE21E9F919100C79EC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305BAA51F43E827B08918BA2 /* libPods-LySelectImageDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F29CEFB1E9F919100C79EC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F29CF061E9F919100C79EC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16976D3E8CB18DDDD77FF78A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A856C086BF9A49F67A8AB9FD /* libPods-LySelectImageDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F29CEDC1E9F919100C79EC2 = {
+			isa = PBXGroup;
+			children = (
+				2F29CEE71E9F919100C79EC2 /* LySelectImageDemo */,
+				2F29CF011E9F919100C79EC2 /* LySelectImageDemoTests */,
+				2F29CF0C1E9F919100C79EC2 /* LySelectImageDemoUITests */,
+				2F29CEE61E9F919100C79EC2 /* Products */,
+				308EAD4490E628245EF4A568 /* Pods */,
+				16976D3E8CB18DDDD77FF78A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F29CEE61E9F919100C79EC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F29CEE51E9F919100C79EC2 /* LySelectImageDemo.app */,
+				2F29CEFE1E9F919100C79EC2 /* LySelectImageDemoTests.xctest */,
+				2F29CF091E9F919100C79EC2 /* LySelectImageDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F29CEE71E9F919100C79EC2 /* LySelectImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2F29CF2F1E9F92DE00C79EC2 /* 图片多选 */,
+				2F29CF341E9F92DE00C79EC2 /* 图片浏览器 */,
+				2F29CEEB1E9F919100C79EC2 /* AppDelegate.h */,
+				2F29CEEC1E9F919100C79EC2 /* AppDelegate.m */,
+				2F29CEEE1E9F919100C79EC2 /* ViewController.h */,
+				2F29CEEF1E9F919100C79EC2 /* ViewController.m */,
+				2F29CEF11E9F919100C79EC2 /* Main.storyboard */,
+				2F29CEF41E9F919100C79EC2 /* Assets.xcassets */,
+				2F29CEF61E9F919100C79EC2 /* LaunchScreen.storyboard */,
+				2F29CEF91E9F919100C79EC2 /* Info.plist */,
+				2F29CEE81E9F919100C79EC2 /* Supporting Files */,
+			);
+			path = LySelectImageDemo;
+			sourceTree = "<group>";
+		};
+		2F29CEE81E9F919100C79EC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F29CEE91E9F919100C79EC2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F29CF011E9F919100C79EC2 /* LySelectImageDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F29CF021E9F919100C79EC2 /* LySelectImageDemoTests.m */,
+				2F29CF041E9F919100C79EC2 /* Info.plist */,
+			);
+			path = LySelectImageDemoTests;
+			sourceTree = "<group>";
+		};
+		2F29CF0C1E9F919100C79EC2 /* LySelectImageDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F29CF0D1E9F919100C79EC2 /* LySelectImageDemoUITests.m */,
+				2F29CF0F1E9F919100C79EC2 /* Info.plist */,
+			);
+			path = LySelectImageDemoUITests;
+			sourceTree = "<group>";
+		};
+		2F29CF2F1E9F92DE00C79EC2 /* 图片多选 */ = {
+			isa = PBXGroup;
+			children = (
+				2F29CF301E9F92DE00C79EC2 /* LySelectImageCollectionCell.h */,
+				2F29CF311E9F92DE00C79EC2 /* LySelectImageCollectionCell.m */,
+				2F29CF321E9F92DE00C79EC2 /* LySelectImageView.h */,
+				2F29CF331E9F92DE00C79EC2 /* LySelectImageView.m */,
+			);
+			path = "图片多选";
+			sourceTree = "<group>";
+		};
+		2F29CF341E9F92DE00C79EC2 /* 图片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				2F29CF351E9F92DE00C79EC2 /* ZJCollectionCell.h */,
+				2F29CF361E9F92DE00C79EC2 /* ZJCollectionCell.m */,
+				2F29CF371E9F92DE00C79EC2 /* ZJFlowLayout.h */,
+				2F29CF381E9F92DE00C79EC2 /* ZJFlowLayout.m */,
+				2F29CF391E9F92DE00C79EC2 /* ZJPhoneBrower.h */,
+				2F29CF3A1E9F92DE00C79EC2 /* ZJPhoneBrower.m */,
+			);
+			path = "图片浏览器";
+			sourceTree = "<group>";
+		};
+		308EAD4490E628245EF4A568 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F091F3EDB2F56591F50599FC /* Pods-LySelectImageDemo.debug.xcconfig */,
+				23111A8B844838AC89109546 /* Pods-LySelectImageDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F29CEE41E9F919100C79EC2 /* LySelectImageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F29CF121E9F919100C79EC2 /* Build configuration list for PBXNativeTarget "LySelectImageDemo" */;
+			buildPhases = (
+				A41B08ED5A4A8F424753EA7D /* 📦 Check Pods Manifest.lock */,
+				2F29CEE11E9F919100C79EC2 /* Sources */,
+				2F29CEE21E9F919100C79EC2 /* Frameworks */,
+				2F29CEE31E9F919100C79EC2 /* Resources */,
+				425F59497C7F8CE68EC8E04C /* 📦 Embed Pods Frameworks */,
+				7D8ECE4B1029386D7EF4B148 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LySelectImageDemo;
+			productName = LySelectImageDemo;
+			productReference = 2F29CEE51E9F919100C79EC2 /* LySelectImageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F29CEFD1E9F919100C79EC2 /* LySelectImageDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F29CF151E9F919100C79EC2 /* Build configuration list for PBXNativeTarget "LySelectImageDemoTests" */;
+			buildPhases = (
+				2F29CEFA1E9F919100C79EC2 /* Sources */,
+				2F29CEFB1E9F919100C79EC2 /* Frameworks */,
+				2F29CEFC1E9F919100C79EC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F29CF001E9F919100C79EC2 /* PBXTargetDependency */,
+			);
+			name = LySelectImageDemoTests;
+			productName = LySelectImageDemoTests;
+			productReference = 2F29CEFE1E9F919100C79EC2 /* LySelectImageDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F29CF081E9F919100C79EC2 /* LySelectImageDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F29CF181E9F919100C79EC2 /* Build configuration list for PBXNativeTarget "LySelectImageDemoUITests" */;
+			buildPhases = (
+				2F29CF051E9F919100C79EC2 /* Sources */,
+				2F29CF061E9F919100C79EC2 /* Frameworks */,
+				2F29CF071E9F919100C79EC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F29CF0B1E9F919100C79EC2 /* PBXTargetDependency */,
+			);
+			name = LySelectImageDemoUITests;
+			productName = LySelectImageDemoUITests;
+			productReference = 2F29CF091E9F919100C79EC2 /* LySelectImageDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F29CEDD1E9F919100C79EC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "张杰";
+				TargetAttributes = {
+					2F29CEE41E9F919100C79EC2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					2F29CEFD1E9F919100C79EC2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F29CEE41E9F919100C79EC2;
+					};
+					2F29CF081E9F919100C79EC2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F29CEE41E9F919100C79EC2;
+					};
+				};
+			};
+			buildConfigurationList = 2F29CEE01E9F919100C79EC2 /* Build configuration list for PBXProject "LySelectImageDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F29CEDC1E9F919100C79EC2;
+			productRefGroup = 2F29CEE61E9F919100C79EC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F29CEE41E9F919100C79EC2 /* LySelectImageDemo */,
+				2F29CEFD1E9F919100C79EC2 /* LySelectImageDemoTests */,
+				2F29CF081E9F919100C79EC2 /* LySelectImageDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F29CEE31E9F919100C79EC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F29CEF81E9F919100C79EC2 /* LaunchScreen.storyboard in Resources */,
+				2F29CEF51E9F919100C79EC2 /* Assets.xcassets in Resources */,
+				2F29CEF31E9F919100C79EC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F29CEFC1E9F919100C79EC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F29CF071E9F919100C79EC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		425F59497C7F8CE68EC8E04C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LySelectImageDemo/Pods-LySelectImageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D8ECE4B1029386D7EF4B148 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LySelectImageDemo/Pods-LySelectImageDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A41B08ED5A4A8F424753EA7D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F29CEE11E9F919100C79EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F29CF3E1E9F92DE00C79EC2 /* ZJFlowLayout.m in Sources */,
+				2F29CF3F1E9F92DE00C79EC2 /* ZJPhoneBrower.m in Sources */,
+				2F29CF3B1E9F92DE00C79EC2 /* LySelectImageCollectionCell.m in Sources */,
+				2F29CF3C1E9F92DE00C79EC2 /* LySelectImageView.m in Sources */,
+				2F29CEF01E9F919100C79EC2 /* ViewController.m in Sources */,
+				2F29CEED1E9F919100C79EC2 /* AppDelegate.m in Sources */,
+				2F29CEEA1E9F919100C79EC2 /* main.m in Sources */,
+				2F29CF3D1E9F92DE00C79EC2 /* ZJCollectionCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F29CEFA1E9F919100C79EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F29CF031E9F919100C79EC2 /* LySelectImageDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F29CF051E9F919100C79EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F29CF0E1E9F919100C79EC2 /* LySelectImageDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F29CF001E9F919100C79EC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F29CEE41E9F919100C79EC2 /* LySelectImageDemo */;
+			targetProxy = 2F29CEFF1E9F919100C79EC2 /* PBXContainerItemProxy */;
+		};
+		2F29CF0B1E9F919100C79EC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F29CEE41E9F919100C79EC2 /* LySelectImageDemo */;
+			targetProxy = 2F29CF0A1E9F919100C79EC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F29CEF11E9F919100C79EC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F29CEF21E9F919100C79EC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F29CEF61E9F919100C79EC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F29CEF71E9F919100C79EC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F29CF101E9F919100C79EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F29CF111E9F919100C79EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F29CF131E9F919100C79EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F091F3EDB2F56591F50599FC /* Pods-LySelectImageDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LySelectImageDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bona.LySelectImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F29CF141E9F919100C79EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23111A8B844838AC89109546 /* Pods-LySelectImageDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LySelectImageDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bona.LySelectImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2F29CF161E9F919100C79EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LySelectImageDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bona.LySelectImageDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LySelectImageDemo.app/LySelectImageDemo";
+			};
+			name = Debug;
+		};
+		2F29CF171E9F919100C79EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LySelectImageDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bona.LySelectImageDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LySelectImageDemo.app/LySelectImageDemo";
+			};
+			name = Release;
+		};
+		2F29CF191E9F919100C79EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LySelectImageDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bona.LySelectImageDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LySelectImageDemo;
+			};
+			name = Debug;
+		};
+		2F29CF1A1E9F919100C79EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LySelectImageDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bona.LySelectImageDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LySelectImageDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F29CEE01E9F919100C79EC2 /* Build configuration list for PBXProject "LySelectImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F29CF101E9F919100C79EC2 /* Debug */,
+				2F29CF111E9F919100C79EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F29CF121E9F919100C79EC2 /* Build configuration list for PBXNativeTarget "LySelectImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F29CF131E9F919100C79EC2 /* Debug */,
+				2F29CF141E9F919100C79EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F29CF151E9F919100C79EC2 /* Build configuration list for PBXNativeTarget "LySelectImageDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F29CF161E9F919100C79EC2 /* Debug */,
+				2F29CF171E9F919100C79EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F29CF181E9F919100C79EC2 /* Build configuration list for PBXNativeTarget "LySelectImageDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F29CF191E9F919100C79EC2 /* Debug */,
+				2F29CF1A1E9F919100C79EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F29CEDD1E9F919100C79EC2 /* Project object */;
+}
