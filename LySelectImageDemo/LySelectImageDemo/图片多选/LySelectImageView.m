@@ -317,6 +317,7 @@ static const int  kimageEdgeVertical = 13;//图片到View 竖直间隙
         _phoneBrower = [[ZJPhoneBrower alloc] init];
         _phoneBrower.delegate = self;
         _phoneBrower.isContainDel = YES;
+        _phoneBrower.sourceImagesContainerView = self.collectionView;
     }
     return _phoneBrower;
 }

@@ -68,6 +68,7 @@
     
 }
 
+#pragma mark - 显示图片浏览器视图
 - (void)showImages:(NSArray<UIImage *> *)array_images current:(NSInteger )current
 {
     [self.array_image removeAllObjects];
@@ -97,10 +98,12 @@
         self.pageControl.numberOfPages = self.array_image.count;
     }
     
-    [UIView animateWithDuration:0.2 animations:^{
-        
-        [[UIApplication sharedApplication].keyWindow addSubview:self];
-    }];
+    //    [UIView animateWithDuration:0.2 animations:^{
+    //
+    //        [[UIApplication sharedApplication].keyWindow addSubview:self];
+    //    }];
+    
+    [self showForIndex:current];
     
     self.collectionView.contentOffset = CGPointMake(current * [UIScreen mainScreen].bounds.size.width, 0);
 }
@@ -144,14 +147,74 @@
         self.pageControl.numberOfPages = self.array_image.count;
     }
     
-    [UIView animateWithDuration:0.2 animations:^{
-        
-        [[UIApplication sharedApplication].keyWindow addSubview:self];
-    }];
+    //    [UIView animateWithDuration:0.2 animations:^{
+    //
+    //        [[UIApplication sharedApplication].keyWindow addSubview:self];
+    //    }];
+    
+    [self showForIndex:current];
     
     self.collectionView.contentOffset = CGPointMake(current * [UIScreen mainScreen].bounds.size.width, 0);
 }
 
+//动画的放大图片
+- (void)showForIndex:(NSInteger)index
+{
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
+    
+    UIView *sourceView = [self sourceViewForIndex:index];
+    
+    CGRect rect = [self.sourceImagesContainerView convertRect:sourceView.frame toView:self];
+    
+    UIImageView *image = [[UIImageView alloc] init];
+    if (self.isWebImage)
+    {
+        [image sd_setImageWithURL:[NSURL URLWithString:self.array_image[index]] placeholderImage:[UIImage imageNamed:@"sms_associates_bg_pic"]];
+    }
+    else
+    {
+        id name = self.array_image[index];
+        if ([name isKindOfClass:[UIImage class]])
+        {
+            image.image = name;
+        }
+        else if ([name isKindOfClass:[NSString class]])
+        {
+            image.image = [UIImage imageNamed:name];
+        }
+    }
+    image.frame = rect;
+    image.contentMode = UIViewContentModeScaleAspectFit;
+    [self addSubview:image];
+    self.collectionView.hidden = YES;
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        image.center = self.center;
+        image.bounds = (CGRect){CGPointZero, self.collectionView.frame.size};
+    } completion:^(BOOL finished) {
+        [image removeFromSuperview];
+        self.collectionView.hidden = NO;
+    }];
+}
+
+//获得来源的imageview
+- (UIView *)sourceViewForIndex:(NSInteger)index
+{
+    UIView *sourceView = nil;
+    if ([self.sourceImagesContainerView isKindOfClass:[UICollectionView class]])//父控件的UICollectionView
+    {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+        UICollectionView *collectionView = (UICollectionView *)self.sourceImagesContainerView;
+        sourceView = [collectionView cellForItemAtIndexPath:indexPath];
+    }
+    else
+    {
+        sourceView = self.sourceImagesContainerView.subviews[index];
+    }
+    return sourceView;
+}
+
+#pragma mark - 滑动
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat x = scrollView.contentOffset.x;
@@ -160,7 +223,7 @@
     self.label.text = [NSString stringWithFormat:@"%ld/%ld",row + 1,self.array_image.count];
     self.pageControl.currentPage = row;
     
-//    NSInteger current = x / [UIScreen mainScreen].bounds.size.width;
+    //    NSInteger current = x / [UIScreen mainScreen].bounds.size.width;
     
     if (row < 0) {
         row = 0;
@@ -195,18 +258,70 @@
     }
     else
     {
-//        cell.logo.image = [UIImage imageNamed:self.array_image[indexPath.row]];
+        //        cell.logo.image = [UIImage imageNamed:self.array_image[indexPath.row]];
         cell.logo.image = self.array_image[indexPath.row];
     }
     
     return cell;
 }
 
+#pragma mark - 隐藏图片浏览器视图
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
-    [UIView animateWithDuration:0.2 animations:^{
+    //    [UIView animateWithDuration:0.2 animations:^{
+    //        [self removeFromSuperview];
+    //    }];
+    
+    [self hideView:indexPath.row];
+}
+
+//隐藏view
+- (void)hideView:(NSInteger)index
+{
+    UIView *sourceView = [self sourceViewForIndex:index];
+    
+    CGRect rect = [self.sourceImagesContainerView convertRect:sourceView.frame toView:self];
+    
+    UIImageView *tempView = [[UIImageView alloc] init];
+    tempView.contentMode = UIViewContentModeScaleAspectFit;
+    tempView.clipsToBounds = YES;
+    ZJCollectionCell *cell = (ZJCollectionCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+    tempView.image = cell.logo.image;
+    [tempView sizeToFit];
+    
+    CGFloat h = (self.bounds.size.width / cell.logo.image.size.width) * cell.logo.image.size.height;
+    
+    if (h > self.bounds.size.height)//说明是以高为基准，缩放的
+    {
+        CGFloat w = (self.bounds.size.height / cell.logo.image.size.height) * cell.logo.image.size.width;
+        tempView.bounds = CGRectMake(0, 0, w, self.bounds.size.height);
+    }
+    else//以宽为基准，缩放
+    {
+        if (!cell.logo.image)
+        { // 防止 因imageview的image加载失败 导致 崩溃
+            h = self.bounds.size.height;
+        }
+        
+        tempView.bounds = CGRectMake(0, 0, self.bounds.size.width, h);
+    }
+    
+    tempView.center = self.center;
+    
+    [self addSubview:tempView];
+    self.collectionView.hidden = YES;
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        tempView.frame = rect;
+        self.backgroundColor = [UIColor clearColor];
+        self.pageControl.alpha = 0.1;
+    } completion:^(BOOL finished) {
+        self.collectionView.hidden = NO;
+        self.backgroundColor = [UIColor blackColor];
+        self.pageControl.alpha = 1.0;
+        [tempView removeFromSuperview];
         [self removeFromSuperview];
     }];
 }
